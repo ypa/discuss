@@ -10,10 +10,10 @@ config :discuss,
   ecto_repos: [Discuss.Repo]
 
 # Configures the endpoint
-config :discuss, Discuss.Endpoint,
+config :discuss, DiscussWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "QMovfqXHns+O01Fo6rwojnX4WLxg/5pYdvXc8+nozMPMYlODG88KCKfrKjCb/w26",
-  render_errors: [view: Discuss.ErrorView, accepts: ~w(html json)],
+  secret_key_base: "nzGOJe7qA5Bt5HyxgI4p2CAmCJ7hm8Q8Krj4swkMJ0RF56h4ibr41kdKUjSBI5P+",
+  render_errors: [view: DiscussWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Discuss.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
