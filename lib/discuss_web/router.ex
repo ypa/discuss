@@ -14,7 +14,7 @@ defmodule DiscussWeb.Router do
   end
 
   scope "/", DiscussWeb do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
     get "/", PageController, :index
   end
